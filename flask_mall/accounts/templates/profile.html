@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link type="text/css" rel="stylesheet" href="./static/profile.css">
+</head>
+
+<body>
+    <div class="profile-html">
+        <label class="tab">User Profile</label>
+        <div class="profile-form">
+            <div class="profile-htm">
+                <form action="{{url_for('accounts.profile')}}" method="post">
+                    {{form.csrf_token}}
+                    <div class="group">
+                        {{form.userEmail.label}}
+                        {{form.userEmail}}
+                    </div>
+                    <div class="group">
+                        {{form.password.label}}
+                        {{form.password}}
+                    </div>
+                    <div class="group">
+                        {{form.confirm_password.label}}
+                        {{form.confirm_password}}
+                    </div>
+                    <div class="group">
+                        {{form.username.label}}
+                        {{form.username}}
+                    </div>
+                    <div class="group">
+                        {{form.submit}}
+                    </div>
+                </form>
+                {% with messages = get_flashed_messages(with_categories=true) %}
+				  {% for category, message in messages %}
+					<div class="{{ category }}">{{ message }}</div>
+				  {% endfor %}
+                {% endwith %}
+            </div>
+            </div>
+        </div>
+	    </div>
+    </div>
+</body>
+</html>

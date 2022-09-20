@@ -1,0 +1,78 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    background-color:#c8c8c8}
+
+
+body .welcome{
+    width:50%;
+    height: 1000px;
+    position: fixed;
+    top: 100px;
+    background-color:rgba(40,57,101,.9);
+    border:1px solid;
+    border-radius: 25px;
+
+}
+
+.welcome h1{
+    color:#6a6f8c
+    font-size: 100px;
+    margin-top: 350px;
+    margin-left: 80px;
+    position: absolute;
+    text-align: center;
+}
+
+.login a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #6a6f8c;
+    top: 350px;
+    left: 500px;
+    position: absolute;
+}
+
+
+
+.signup a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #6a6f8c;
+    top: 400px;
+    left: 500px;
+    position: absolute;
+}
+
+.profile a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #6a6f8c;
+    top: 350px;
+    left: 500px;
+    position: absolute;
+}
+
+.logout a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #6a6f8c;
+    top: 400px;
+    left: 500px;
+    position: absolute;
+}
+
+.product a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #6a6f8c;
+    top: 450px;
+    left: 500px;
+    position: absolute;
+}
+
+

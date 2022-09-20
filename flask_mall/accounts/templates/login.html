@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link type="text/css" rel="stylesheet" href="./static/login.css">
+</head>
+
+<body>
+	<div class="login-html">
+		<label class="tab">Login</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<form action="{{url_for('accounts.login')}}" method="post">
+					{{form.csrf_token}}
+					<div class="group">
+						{{ form.userEmail.label }}
+						{{ form.userEmail }}
+					</div>
+					<div class="group">
+						{{ form.password.label }}
+						{{ form.password }}
+					</div>
+					<div class="group">
+						<input id="check" type="checkbox" class="check" checked>
+						<span class="icon"> Keep me Signed in</span>
+					</div>
+					<div class="group">
+						{{ form.submit }}
+					</div>
+					<div class="hr"></div>
+					<div class="no_account">
+						<a href=" {{ url_for('accounts.signup') }}">Create a new account</a>
+					</div>
+					<div class="foot-lnk">
+						<a href="#forgot">Forgot Password?</a>
+					</div>
+					</form>
+				{% with messages = get_flashed_messages(with_categories=true) %}
+				  {% for category, message in messages %}
+					<div class="{{ category }}">{{ message }}</div>
+				  {% endfor %}
+				{% endwith %}
+			</div>
+	</div>
+</div>
+</body>
+</html>

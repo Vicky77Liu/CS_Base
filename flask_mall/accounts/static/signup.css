@@ -1,0 +1,139 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin:0;
+	color:#6a6f8c;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+.signup-html{
+	width:450px;
+	height:600px;
+	top: 250px;
+	left: 750px;
+	position:fixed;
+	padding:90px 70px 50px 70px;
+	border-radius: 30px;
+	background:rgba(40,57,101,.9);
+}
+.signup-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+}
+
+
+.signup-html .tab{
+	font-size:30px;
+	padding-bottom:5px;
+	margin:0 15px 25px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+
+
+
+.signup-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.signup-form .group{
+	margin-bottom:15px;
+}
+
+.signup-form .group .label,
+.signup-form .group .input,
+.signup-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.signup-form .group .input,
+.signup-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.signup-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.signup-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.signup-form .group .button{
+	background:#1161ee;
+}
+.signup-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.signup-form .group label .icon:before,
+.signup-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.signup-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.signup-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.signup-form .group .check:checked + label{
+	color:#fff;
+}
+.signup-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+.signup-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.signup-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+
+.signup-form .group .sign-up-bt{
+    margin-top:35px
+}
+
+.hr{
+	height:2px;
+	margin:50px 0 40px 0;
+	background:rgba(255,255,255,.2);
+}
+
+.have_account{
+    text-align:center;}
+
+.have_account a{
+    text-decoration: none;
+    color:#6a6f8c;
+}
+
+.message {
+    color: #A52A2A;
+    font-size:30px;
+}
